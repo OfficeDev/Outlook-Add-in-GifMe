@@ -1,0 +1,25 @@
+{
+  "name": "GifMe",
+  "version": "1.0.0",
+  "scripts": {
+    "postinstall": "bower install && tsd install",
+    "start": "gulp serve-static",
+    "semi": "semistandard --verbose | snazzy || true"
+  },
+  "devDependencies": {
+    "chalk": "^1.1.1",
+    "gulp": "^3.9.0",
+    "gulp-webserver": "^0.9.1",
+    "minimist": "^1.2.0",
+    "semistandard": "^7.0.4",
+    "tsd": "^0.6.5",
+    "xmllint": "git+https://github.com/kripken/xml.js.git"
+  },
+  "semistandard": {
+    "ignore": [
+      "gulpfile.js",
+      "appcompose/components/",
+      "scripts/"
+    ]
+  }
+}

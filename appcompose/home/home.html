@@ -1,0 +1,69 @@
+<!-- Copyright (c) Microsoft Corporation All rights reserved. Licensed under the MIT license. -->
+<!-- See LICENSE in the project root for license information. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!-- Office styles 
+    ==================================== -->
+    <link href="../../Content/Office.css" rel="stylesheet" type="text/css" />
+    <link href="../../bower_components/microsoft.office.js/content/OfficeThemes.css" rel="stylesheet" type="text/css" />
+    <link href="//appsforoffice.microsoft.com/fabric/1.0/fabric.min.css" rel="stylesheet">
+    <link href="//appsforoffice.microsoft.com/fabric/1.0/fabric.components.min.css" rel="stylesheet">
+
+    <!-- App-specific styles
+    ==================================== -->
+    <link href="home.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body>
+    <div id="header">
+      <!-- Giphy attribution. 
+      ==================================== -->
+      <img id="attribution" src="../../images/giphy-attribution-dark.png" />
+      
+      <!-- The search box where enters query. 
+      ==================================== -->
+      <form id="query-form">
+        <div class="padding">
+          <div id="query-SearchBox" class="ms-SearchBox">
+            <input id="query-input" class="ms-SearchBox-field" type="text" placeholder="Search all the GIFs">
+            <button class="ms-SearchBox-closeButton"><i class="ms-Icon ms-Icon--x"></i></button>
+          </div>
+          <button id="search-button" class="ms-Button ms-Button--command" type="submit"><span class="ms-Button-icon"><i class="ms-Icon ms-Icon--search"></i></span></button>
+        </div>
+      </form>
+    </div>
+    
+    <p id="loading-message" class="ms-font-l padding">Searching all the GIFs...</p>
+    
+    <!-- The list of results. 
+    ==================================== -->
+    <div id="results" class="padding">
+    </div>
+    
+    <!-- jQuery 
+    ==================================== -->
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-1.9.1.min.js"></script> 
+    
+    <!-- waitForImages 
+    ==================================== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.waitforimages/1.5.0/jquery.waitforimages.min.js"></script>
+    
+    <!-- Microsoft 
+    ==================================== --> 
+    <script src="//appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <script src="../../scripts/MicrosoftAjax.js"></script>
+    
+    <!-- Fabric components 
+    ==================================== -->
+    <script src="../components/JQuery.SearchBox.js"></script>
+    
+    <!-- App-specific code 
+    ==================================== -->
+    <script src="home.js"></script>
+  </body>
+</html>

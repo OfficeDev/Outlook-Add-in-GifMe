@@ -1,0 +1,65 @@
+/*
+ * Copyright (c) Microsoft Corporation All rights reserved. Licensed under the MIT license.
+ * See LICENSE in the project root for license information.
+ */
+
+/*
+  App styling 
+*/
+
+.padding {
+  padding: 15px;
+}
+
+#header {
+  padding-top: 15px;
+  background-color: #0078D7;
+}
+
+#attribution {
+  display: block;
+  margin: auto;
+}
+
+#search-button {
+  background-color: #EFF6FC;
+}
+
+#results {
+  padding-top: 15px;
+}
+
+.result{
+  padding: 15px;
+  padding-bottom: 0px;
+}
+
+.result-gif {
+  height: auto;
+  width: 250px;
+  display: block;
+  margin: auto; 
+}
+
+.hovering {
+  background-color: #C7E0F4;
+}
+
+.button-holder {
+  margin: 0 5px;
+  text-align: center;
+  padding: 5px 0;
+}
+
+/*
+  Tweaks to Office UI Fabric 
+*/
+
+.ms-SearchBox-field {
+  line-height: 1.5em;
+}
+
+.ms-font-l {
+  margin: 0;
+  margin-bottom: 5px;
+}

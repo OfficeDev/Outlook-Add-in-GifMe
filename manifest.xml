@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OfficeApp 
+  xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0"
+  xmlns:mailappor="http://schemas.microsoft.com/office/mailappversionoverrides/1.0"
+  xsi:type="MailApp">
+  <Id>bd5d7b16-a08f-4bed-ac4f-f37882b5c55a</Id>
+  <Version>1.0.0</Version>
+  <ProviderName>Microsoft</ProviderName>
+  <DefaultLocale>en-US</DefaultLocale>
+  <DisplayName DefaultValue="GifMe"/>
+  <Description DefaultValue="Be expressive... in short, silent, looped videos."/>
+  <HighResolutionIconUrl DefaultValue="https://localhost:8443/images/logo-80.png"/>
+  <SupportUrl DefaultValue="https://localhost:8443/support.html"/>
+  <Hosts>
+    <Host Name="Mailbox"/>
+  </Hosts>
+  <Requirements>
+    <Sets>
+      <Set Name="MailBox" MinVersion="1.1"/>
+    </Sets>
+  </Requirements>
+  <FormSettings>
+    <Form xsi:type="ItemEdit">
+      <DesktopSettings>
+        <SourceLocation DefaultValue="https://localhost:8443/appcompose/home/home.html"/>
+      </DesktopSettings>
+    </Form>
+  </FormSettings>
+  <Permissions>ReadWriteItem</Permissions>
+  <Rule xsi:type="RuleCollection" Mode="Or">
+    <Rule xsi:type="ItemIs" ItemType="Message" FormType="Edit"/>
+    <Rule xsi:type="ItemIs" ItemType="Appointment" FormType="Edit"/>
+  </Rule>
+  <DisableEntityHighlighting>false</DisableEntityHighlighting>
+  <VersionOverrides xmlns="http://schemas.microsoft.com/office/mailappversionoverrides" xsi:type="VersionOverridesV1_0">
+    <Requirements>
+      <bt:Sets DefaultMinVersion="1.3">
+        <bt:Set Name="Mailbox" />
+      </bt:Sets>
+    </Requirements>  
+    <Hosts>
+      <Host xsi:type="MailHost">
+        <DesktopFormFactor> 
+          <FunctionFile resid="homeUrl" /> 
+          <ExtensionPoint xsi:type="MessageComposeCommandSurface">
+            <OfficeTab id="TabDefault">
+              <Group id="group">
+                <Label resid="groupLabel" />
+                <Control xsi:type="Button" id="msgReadOpenPaneButton">
+                  <Label resid="paneLabel" />                 
+                  <Supertip>
+                    <Title resid="paneReadSuperTipTitle" />
+                    <Description resid="paneReadSuperTipDescription" />
+                  </Supertip>
+                  <Icon>
+                    <bt:Image size="16" resid="icon-16" />
+                    <bt:Image size="32" resid="icon-32" />
+                    <bt:Image size="80" resid="icon-80" />
+                  </Icon>
+                  <Action xsi:type="ShowTaskpane">
+                    <SourceLocation resid="homeUrl" />
+                  </Action>
+                </Control>
+              </Group>
+            </OfficeTab>	
+          </ExtensionPoint>
+        </DesktopFormFactor>
+      </Host>
+    </Hosts>
+    <Resources>
+      <bt:Images>
+        <bt:Image id="icon-16" DefaultValue="https://localhost:8443/images/logo-16.png" />
+        <bt:Image id="icon-32" DefaultValue="https://localhost:8443/images/logo-32.png" />
+        <bt:Image id="icon-80" DefaultValue="https://localhost:8443/images/logo-80.png" />
+      </bt:Images>
+      <bt:Urls>
+        <bt:Url id="homeUrl" DefaultValue="https://localhost:8443/appcompose/home/home.html"></bt:Url>
+      </bt:Urls>
+      <bt:ShortStrings>
+        <bt:String id="groupLabel" DefaultValue="GifMe" />
+        <bt:String id="paneLabel" DefaultValue="Search all the GIFs" />
+        <bt:String id="paneReadSuperTipTitle" DefaultValue="Search all the GIFs" />      
+      </bt:ShortStrings>
+      <bt:LongStrings>
+        <bt:String id="paneReadSuperTipDescription" DefaultValue="Search all the GIFs to express how you really feel." />                            
+      </bt:LongStrings>
+    </Resources>
+  </VersionOverrides>
+</OfficeApp>
