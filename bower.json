@@ -1,9 +1,20 @@
 {
   "name": "gifme",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "dependencies": {
     "microsoft.office.js": "*",
     "jquery": "~1.9.1",
-    "office-ui-fabric": "*"
-  }
+    "office-ui-fabric": "*",
+    "waitForImages": "~2.1.0"
+  },
+  "homepage": "https://github.com/OfficeDev/Outlook-Add-in-GifMe",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "/bower_components",
+    "test",
+    "tests"
+  ]
 }
