@@ -1,7 +1,7 @@
 # GifMe
 **GifMe** is an Outlook add-in that demonstrates third-party integration (using the [Giphy API](https://github.com/giphy/GiphyAPI)) with Outlook add-ins, how to insert images and text into Outlook items, how to take advantage of [add-in commands for Outlook](https://msdn.microsoft.com/library/office/mt267546.aspx), and how to get an Office look and feel using [Office UI Fabric](http://dev.office.com/fabric).
 
-![GifMe gif](/readme_assets/demo.gif)
+![GifMe gif](https://github.com/OfficeDev/Outlook-Add-in-GifMe/raw/master/readme_assets/demo.gif)
 
 ## Prerequisites
 * [npm](https://www.npmjs.com/), Node Package Manager, is required to install dev dependencies.
