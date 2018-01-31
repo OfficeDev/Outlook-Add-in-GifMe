@@ -1,0 +1,20 @@
+### YamlMime:Sample
+sample:
+- name: 'Outlook add-in: GifMe'
+  path: ''
+  description: GifMe is an Outlook add-in that demonstrates third-party integration (using the Giphy API) with Outlook add-ins, how to insert images and text into Outlook items, how to take advantage of add-in commands for Outlook, and how to get an Office look and feel using Office UI Fabric.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Office Add-in
+  - Office UI Fabric
+  azureDeploy: ''
+  author: jamescro
+  platforms: []
+  languages:
+  - JavaScript
+  extensions:
+    products:
+    - Outlook
+    scenarios: []
