@@ -10,8 +10,11 @@ extensions:
   technologies:
   - Add-ins
   createdDate: 1/19/2016 11:09:19 AM
+description: "GifMe is an Outlook add-in that demonstrates third-party integration (using the Giphy API) with Outlook add-ins."
 ---
+
 # GifMe
+
 **GifMe** is an Outlook add-in that demonstrates third-party integration (using the [Giphy API](https://github.com/giphy/GiphyAPI)) with Outlook add-ins, how to insert images and text into Outlook items, how to take advantage of [add-in commands for Outlook](https://msdn.microsoft.com/library/office/mt267546.aspx), and how to get an Office look and feel using [Office UI Fabric](http://dev.office.com/fabric).
 
 ![GifMe gif](/readme_assets/demo.gif)
@@ -58,6 +61,5 @@ extensions:
 
 ## Copyright
 Copyright (c) 2015 Microsoft. All rights reserved.
-
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information, see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
